@@ -1,2 +1,2 @@
-# visual-timer
-App for visualizing proportion of time remaining on tasks.
+# Visual Timer
+React app for visualizing proportion of time remaining on tasks.
