@@ -49,7 +49,7 @@ export function Timer() {
   useEffect(() => {
     const id = setInterval(() => {
       setData(getData(start, due));
-    }, 500);
+    }, 1000);
 
     return () => {
       clearInterval(id);
