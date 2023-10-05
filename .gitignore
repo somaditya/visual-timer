@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,react,node,linux
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,react,node,linux
+# Created by https://www.toptal.com/developers/gitignore/api/react,node,visualstudiocode,linux,windows
+# Edit at https://www.toptal.com/developers/gitignore?templates=react,node,visualstudiocode,linux,windows
 
 ### Linux ###
 *~
@@ -55,7 +55,7 @@ bower_components
 .lock-wscript
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
-build/Release
+build/
 
 # Dependency directories
 node_modules/
@@ -188,4 +188,30 @@ sketch
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,react,node,linux
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# End of https://www.toptal.com/developers/gitignore/api/react,node,visualstudiocode,linux,windows
