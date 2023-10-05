@@ -32,16 +32,18 @@ const options = {
   tooltip: { trigger: "mouse" },
   slices: {
     0: { color: "tomato" },
-    1: { color: "lightgrey" },
+    1: { color: "gainsboro" },
   },
 };
 
 export function Timer() {
-  let today: Date = new Date();
-  const [start, setStart] = useState(today);
+  let todayMinus2: Date = new Date();
+  todayMinus2.setDate(todayMinus2.getDate() - 2);
 
   let deadline: Date = new Date();
-  deadline.setDate(today.getDate() + 10);
+  deadline.setDate(deadline.getDate() + 5);
+
+  const [start, setStart] = useState(todayMinus2);
   const [due, setDue] = useState(deadline);
 
   const [data, setData] = useState(getData(start, due));
