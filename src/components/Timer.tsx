@@ -8,21 +8,10 @@ function getData(start: any, due: any) {
 
   return [
     ["Pac Man", "Percentage"],
-    ["remaining (sec)", remaining],
-    ["elapsed (sec)", elapsed],
+    ["Remaining (sec)", remaining],
+    ["Elapsed (sec)", elapsed],
   ];
 }
-
-const options = {
-  legend: "label",
-  pieSliceText: "value",
-  pieStartAngle: 0,
-  tooltip: { trigger: "mouse" },
-  slices: {
-    0: { color: "tomato" },
-    1: { color: "lightgrey" },
-  },
-};
 
 function fmtDate(input: Date) {
   const date = new Date(input);
@@ -35,6 +24,17 @@ function fmtDate(input: Date) {
 
   return yyyy + "-" + mm + "-" + dd;
 }
+
+const options = {
+  legend: "none",
+  pieSliceText: "value",
+  pieStartAngle: 0,
+  tooltip: { trigger: "mouse" },
+  slices: {
+    0: { color: "tomato" },
+    1: { color: "lightgrey" },
+  },
+};
 
 export function Timer() {
   let today: Date = new Date();
@@ -64,7 +64,6 @@ export function Timer() {
             <th>
               <label htmlFor="start">Start Date</label>
             </th>
-            <th>(mm/dd/yyyy)</th>
             <th>
               <label htmlFor="due">Due Date</label>
             </th>
@@ -81,7 +80,6 @@ export function Timer() {
                 onChange={(e) => setStart(new Date(e.target.value))}
               />
             </td>
-            <td></td>
             <td>
               <input
                 type="date"
