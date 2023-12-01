@@ -1,10 +1,8 @@
 # Visual Timer
-
+### [Live Demo](https://visual-timer-seven.vercel.app/)
 React app for visualizing the proportion of time remaining on tasks.
 
 > This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-### [Live Demo](https://visual-timer-seven.vercel.app/)
 
 ## Available Scripts
 
